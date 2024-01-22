@@ -27,6 +27,7 @@ stages{
   stage('security scans'){
       steps{
         echo 'security scans'
+
       }
   }
 
@@ -36,8 +37,10 @@ stages{
     }
       steps{
         echo 'artifact creation'
+        sh 'echo env'
       }
   }
 
 }
 }
+
