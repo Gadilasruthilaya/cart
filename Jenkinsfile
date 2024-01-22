@@ -19,7 +19,7 @@ stages{
   }
   stage('code analysis'){
       steps{
-        echo 'code analysis'
+        echo 'sonar'
         sh 'sonar-scanner -Dsonar.host.url=http://172.31.86.197:9000 -Dsonar.login=admin -DSonar.password=admin123 -Dsonar.projectKey=cart'
       }
   }
