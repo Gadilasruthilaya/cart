@@ -33,11 +33,11 @@ stages{
 
   stage('artifact creation'){
    when{
-     expression{env.TAG_NAME == ".*"}
+     expression{env.TAG_NAME ==~".*"}
     }
       steps{
         echo 'artifact creation'
-        sh 'echo env'
+        sh 'env'
       }
   }
 
