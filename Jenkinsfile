@@ -1,6 +1,6 @@
-@Library('roboshop')
+@Library('roboshop') _
 
-// env.cibuild = "nodejs"
+env.cibuild = "nodejs"
 mainci()
 
 
